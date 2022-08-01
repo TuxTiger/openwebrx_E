@@ -167,6 +167,16 @@ function init_key_listener(keypress) {
         if (keypress.keyCode == "39") {
             freqstep(3);
         }
+        // z (zoom in/out/max)
+        if (keypress.keyCode == "90") {
+            if (keypress.shiftKey) {    // Z
+                zoomInOneStep();
+            } else if (keypress.ctrlKey) {    // cntrl-Z
+                zoomInTotal();
+            } else {
+                zoomOutOneStep();    // z
+            }
+        }
     });
 }
 /*  ------------------------------------------------------------------------- */
