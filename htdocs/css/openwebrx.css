@@ -530,7 +530,7 @@ input[type=range]:disabled {
 
 .openwebrx-stepchangeHz-button {
 
-    background-color: #04AA6D; /* Green */
+    background-color: red;  /* Default 1kHz step size active */
     /*  border: none; */
     color: white;
     height: 16px;

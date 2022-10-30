@@ -32,7 +32,7 @@ var fft_compression = "none";
 var fft_codec;
 var waterfall_setup_done = 0;
 var secondary_fft_size;
-var StepHz = 5000        // tuxtiger: for 1 / 5 / 9 kHz stepchange
+var StepHz = 1000        // tuxtiger: for 1 / 5 / 9 kHz stepchange
 
 function updateVolume() {
     audioEngine.setVolume(parseFloat($("#openwebrx-panel-volume").val()) / 100);
